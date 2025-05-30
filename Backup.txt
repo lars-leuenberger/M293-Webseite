@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- https://www.youtube.com/watch?v=aNDqzlAKmZc -->
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="off-screen-menu">
+            <ul>
+                <li>Home</li>
+                <li>Über mich</li>
+                <li>Portfolio</li>
+                <li>Fähigkeiten</li>
+                <li>Kontakt</li>
+            </ul>
+        </div>
+
+        <script src="./web.js"></script>
+
+        <!-- <a href="index.html"><img src="./assets/icons/Header.png" alt="Logo, Lars in Leuchtschrift" class=""></a> -->
+    </header>
+
+    <footer>
+        <p>
+            <a href="https://github.com/lars-leuenberger" target="_blank">GitHub</a> | <a
+                href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">Linkedin</a> | <a
+                href="https://www.instagram.com/leuenla/" target="_blank">Instagram</a>
+        </p>
+        <p>© Lars Leuenberger 2025</p>
+    </footer>
+</body>
+
+</html>
+
+==========================================================================================================
+==========================================================================================================
+
+:root {
+    --background-color: #ffffff;
+    --font-color: #000000;
+    --element-color: #2f2e33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--element-color);
+}
+
+.off-screen-menu {
+    background-color: var(--element-color);
+    color: var(--background-color);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: var(--element-color);
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
