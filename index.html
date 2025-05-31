@@ -8,18 +8,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lars</title>
 </head>
 
 <body>
     <!-- Bilder mit https://www.resizepixel.com/de optimieren -->
     <header>
-        <!-- Ham Menu -> nav-Tag -->
-         <nav></nav>
-         <a href="index.html"><img src="./assets/icons/lars_logo.svg" alt="Logo, Lars in Leuchtschrift" class="logo"></a>
-         <div></div>
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html">
+            <img src="./assets/icons/lars_logo.svg" alt="Logo, Lars in Leuchtschrift" class="logo">
+        </a>
+
+        <nav id="main-nav" class="side-menu" aria-hidden="true">
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay"></div>
+        <div></div>
+        <script src="js/script.js"></script>
     </header>
+
 
     <main>
     </main>
