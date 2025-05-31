@@ -1,11 +1,15 @@
+/* Variablen */
 :root {
     --elemente: #2f2e33;
     --background-fontColor: #ffffff;
     --fontColor: #000000;
     --font: 'Open Sans', sans-serif;
     --header-footer-heigth: 10vh;
+    --fontWeight-regular: 400;
+    --fontWeight-bold: 700;
 }
 
+/* Grundeinstellungen */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +25,41 @@ body {
     font-family: var(--font);
 }
 
+/* Textblöcke */
+h1 {
+    color: var(--background-fontColor);
+    font-family: var(--font);
+    font-size: clamp(1.5rem, 2rem, 2.5rem);
+    font-weight: var(--fontWeight-bold);
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--background-fontColor);
+    font-family: var(--font);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-weight: var(--fontWeight-bold);
+    text-decoration: none;
+}
+
+p {
+    color: var(--background-fontColor);
+    font-family: var(--font);
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+    font-weight: var(--fontWeight-regular);
+    text-decoration: none;
+}
+
+a {
+    color: var(--background-fontColor);
+    font-family: var(--font);
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+    font-weight: var(--fontWeight-regular);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Header mit Hamburger Menu und Logo */
 header {
     display: flex;
     align-items: center;
@@ -113,7 +152,7 @@ header {
 }
 
 .logo {
-    height: 60%;
+    height: 10vh;
     width: auto;
 }
 
@@ -122,6 +161,11 @@ main {
 }
 
 footer {
-    background-color: var(--elemente);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
     height: var(--header-footer-heigth);
+    background-color: var(--elemente);
+    position: relative;
 }
