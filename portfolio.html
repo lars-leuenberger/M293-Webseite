@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="svg" href="assets/icons/lars_logo.svg" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Bilder mit https://www.resizepixel.com/de optimieren -->
+    <header>
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html">
+            <img src="./assets/icons/lars_logo.svg" alt="Logo, Lars in Leuchtschrift" class="logo">
+        </a>
+
+        <nav id="main-nav" class="side-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay"></div>
+        <div></div>
+        <script src="js/script.js"></script>
+    </header>
+
+    <main>
+        <div class="text-container">
+            <h1>Portfolio</h1>
+            <p>Während meiner Zeit in der Lehre habe ich bereits mehrere Projekte realisiert.
+                <br>
+                Einige finden sich auf meinem GitHub-Account:
+                <br>
+                <a href="https://github.com/lars-leuenberger/">github.com/lars-leuenberger</a>
+            </p>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h2>Python PDF-Tool</h2>
+                <p>Um etwas tiefer in die Programmierung mit Python einzutauchen entwickelte ich ein PDF-Tool. Mit
+                    diesem lassen sich PDFs zusammenfügen und trennen. Obwohl das Projekt sehr einfach gehalten wurde,
+                    konnte ich trotzdem viel lernen.</p>
+            </div>
+            <div class="box">
+                <h2>Hobbys</h2>
+                <ul>
+                    <li>Klettern</li>
+                    <li>Joggen</li>
+                    <li>Biken</li>
+                    <li>Ski fahren</li>
+                    <li>Programmieren</li>
+                    <li>Lesen</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Eigene Webseite</h2>
+                <p>In einem Modul zum Thema Webdesign, erstellte ich eine Webseite, auf der man eine rudimentäre Version
+                    von Black Jack spielen kann.
+                    Probiere es aus:
+                    <br>
+                    <a href="https://sleuel.bbc-projects.ch/">sleuel.bbc-projects.ch</a>
+                </p>
+            </div>
+        </div>
+        <div class="video-container">
+            <video class="video" autoplay loop playsinline>
+                <source src="assets/images/Mobile App Demo.mp4" type="video/mp4" />
+                Dein Browser unterstützt das Video-Tag nicht.
+            </video>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Links und Copyright -->
+        <p>
+            <a href="https://github.com/lars-leuenberger" target="_blank">GitHub</a> | <a
+                href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">Linkedin</a> | <a
+                href="https://www.instagram.com/leuenla/" target="_blank">Instagram</a>
+        </p>
+        <p>© Lars Leuenberger 2025</p>
+    </footer>
+
+</body>
+
+</html>
