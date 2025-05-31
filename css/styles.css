@@ -22,12 +22,13 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    width: 100%;
     font-family: var(--font);
 }
 
-/* Textblöcke */
+/* Text */
 h1 {
-    color: var(--background-fontColor);
+    color: unset;
     font-family: var(--font);
     font-size: clamp(1.5rem, 2rem, 2.5rem);
     font-weight: var(--fontWeight-bold);
@@ -35,7 +36,7 @@ h1 {
 }
 
 h2 {
-    color: var(--background-fontColor);
+    color: unset;
     font-family: var(--font);
     font-size: clamp(1rem, 1.5rem, 2rem);
     font-weight: var(--fontWeight-bold);
@@ -43,7 +44,7 @@ h2 {
 }
 
 p {
-    color: var(--background-fontColor);
+    color: unset;
     font-family: var(--font);
     font-size: clamp(0.5rem, 1rem, 1.5rem);
     font-weight: var(--fontWeight-regular);
@@ -51,11 +52,11 @@ p {
 }
 
 a {
-    color: var(--background-fontColor);
+    color: unset;
     font-family: var(--font);
     font-size: clamp(0.5rem, 1rem, 1.5rem);
     font-weight: var(--fontWeight-regular);
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -64,7 +65,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
     height: var(--header-footer-heigth);
     background-color: var(--elemente);
     position: relative;
@@ -74,8 +74,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 32px;
-    height: 24px;
+    width: 4em;
+    height: 2em;
+    padding-left: 1em;
     background: none;
     border: none;
     cursor: pointer;
@@ -156,10 +157,63 @@ header {
     width: auto;
 }
 
+/* Main */
 main {
     background-color: var(--background-fontColor);
+    display: flex;
+    flex-direction: column;
 }
 
+.box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2vh 2vw;
+}
+
+.box {
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 220px;
+    height: 50vh;
+    background-color: var(--elemente);
+    color: var(--background-fontColor);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.text-container {
+    flex: 1 1 300px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 50vh;
+
+    background-color: none;
+    color: var(--fontColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.image {
+    max-width: 400px;
+    min-width: 220px;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Footer mit Links und Copyright */
 footer {
     display: flex;
     align-items: center;
@@ -167,5 +221,41 @@ footer {
     padding: 0 2rem;
     height: var(--header-footer-heigth);
     background-color: var(--elemente);
+    color: var(--background-fontColor);
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box {
+        flex: 1 1 250px;
+        max-width: 300px;
+        min-width: 220px;
+        height: 25vh;
+        background-color: var(--elemente);
+        color: var(--background-fontColor);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .image {
+        max-width: 400px;
+        min-width: 220px;
+        height: 35vh;
+        object-fit: cover;
+        border-radius: 12px;
+    }
 }
