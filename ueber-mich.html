@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="svg" href="assets/icons/lars_logo.svg" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Bilder mit https://www.resizepixel.com/de optimieren -->
+    <header>
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html">
+            <img src="./assets/icons/lars_logo.svg" alt="Logo, Lars in Leuchtschrift" class="logo">
+        </a>
+
+        <nav id="main-nav" class="side-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay"></div>
+        <div></div>
+        <script src="js/script.js"></script>
+    </header>
+
+    <main>
+        <div class="text-container">
+            <h1>Über mich</h1>
+            <p>Ich bin Lars Leuenberger, 16 Jahre alt, aus Lichtensteig. In meiner Freizeit treibe ich gerne Sport.
+                Neben
+                sportlichen Aktivitäten interessiere ich mich besonders für Technik, Informatik und Wirtschaft. Das
+                Programmieren fasziniert mich seh, weshalb ich mich zu einer Lehre als Applikationsentwickler bei
+                Raiffeisen
+                Schweiz entschieden habe.</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h2>Steckbrief</h2>
+                <ul>
+                    <li>Name: Lars Leuenberger</li>
+                    <li>Geburtstag: 06. Oktober 2008</li>
+                    <li>Wohnort: Lichtensteig</li>
+                    <li>Beruf: Applikationsentwickler</li>
+                    <li>Lehrfirma: Raiffeisen Schweiz</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Hobbys</h2>
+                <ul>
+                    <li>Klettern</li>
+                    <li>Joggen</li>
+                    <li>Biken</li>
+                    <li>Ski fahren</li>
+                    <li>Programmieren</li>
+                    <li>Lesen</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Interessen</h2>
+                <ul>
+                    <li>Technik</li>
+                    <li>Informatik</li>
+                    <li>Sport</li>
+                    <li>Wirtschaft</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-container">
+            <img class="image" src="assets/images/Ueber-mich-klettern.JPG" alt="Person beim Bouldern">
+            <img class="image" src="assets/images/Ueber-mich-barcelona.JPG" alt="Person auf einem Klettergerüst an einem Strand">
+            <img class= "image" src="assets/images/Ueber-mich-laufen.jpg" alt="Person beim Joggen">
+            <img class="image" src="assets/images/Ueber-mich-ski.jpg" alt="Person beim Ski fahren">
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Links und Copyright -->
+        <p>
+            <a href="https://github.com/lars-leuenberger" target="_blank">GitHub</a> | <a
+                href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">Linkedin</a> | <a
+                href="https://www.instagram.com/leuenla/" target="_blank">Instagram</a>
+        </p>
+        <p>© Lars Leuenberger 2025</p>
+    </footer>
+
+</body>
+
+</html>
