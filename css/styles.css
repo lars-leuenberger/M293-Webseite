@@ -3,6 +3,7 @@
     --elemente: #2f2e33;
     --background-fontColor: #ffffff;
     --fontColor: #000000;
+    --hover: #444;
     --font: 'Open Sans', sans-serif;
     --header-footer-heigth: 10vh;
     --fontWeight-regular: 400;
@@ -58,6 +59,12 @@ a {
     font-weight: var(--fontWeight-regular);
     text-decoration: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+a:hover {
+    transform: scale(1.05);
 }
 
 /* Header mit Hamburger Menu und Logo */
@@ -229,6 +236,69 @@ main {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.icons-container {
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
+    padding: 2vh 2vw;
+    background-color: none;
+}
+
+.icon {
+    height: 5vh;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: transparent;
+    align-self: center;
+    margin-bottom: 10vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    width: 95%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--elemente);
+    color: var(--background-fontColor);
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: var(--background-fontColor);
+}
+
+#button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 12px;
+    width: 20vw;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#button:hover {
+    background-color: var(--hover);
 }
 
 /* Footer mit Links und Copyright */
