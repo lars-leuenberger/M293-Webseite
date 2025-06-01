@@ -59,12 +59,6 @@ a {
     font-weight: var(--fontWeight-regular);
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    will-change: transform;
-}
-
-a:hover {
-    transform: scale(1.05);
 }
 
 /* Header mit Hamburger Menu und Logo */
@@ -162,6 +156,12 @@ header {
 .logo {
     height: 10vh;
     width: auto;
+        transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.logo:hover {
+    transform: scale(1.15);
 }
 
 /* Main */
@@ -194,6 +194,12 @@ main {
     align-items: center;
     text-align: center;
     padding: 1rem;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.box:hover {
+    transform: scale(1.05);
 }
 
 .text-container {
@@ -236,6 +242,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 12px;
 }
 
 .icons-container {
@@ -252,7 +259,7 @@ main {
 }
 
 .icon {
-    height: 5vh;
+    height: 7vh;
 }
 
 .input-container {
