@@ -10,11 +10,10 @@
     <link rel="icon" type="svg" href="assets/icons/lars_logo.svg" />
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Home</title>
+    <title>Kontakt - Lars</title>
 </head>
 
 <body>
-    <!-- Bilder mit https://www.resizepixel.com/de optimieren -->
     <header>
         <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
             <span></span>
@@ -36,13 +35,12 @@
             </ul>
         </nav>
 
-        <div class="overlay"></div>
-        <div></div>
-        <script src="js/script.js"></script>
+        <section class="overlay"></section>
+        <section></section>
     </header>
 
     <main>
-        <div class="text-container">
+        <section class="text-container">
             <h1>Noch Fragen? Melde dich!</h1>
             <p>Lars Leuenberger
                 <br>
@@ -50,42 +48,41 @@
                 <br>
                 9620 Lichtensteig
                 <br>
-                lars.leuenberger@bbcag.ch
+                <a href="mailto:lars.leuenberger@bbcag.ch">lars.leuenberger@bbcag.ch</a>
             </p>
-            <div class="icons-container">
-                <a href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">
-                    <img class="icon" src="assets/icons/Kontakt-LinkedIn.svg" alt="LinkedIn Logo">
+            <section class="icons-container">
+                <a href="https://www.instagram.com/leuenla/" target="_blank" aria-label="Instagram Profil">
+                    <img class="icon" src="assets/icons/Kontakt-Instagram3.svg" alt="Instagram Logo">
                 </a>
-                <a href="https://www.instagram.com/leuenla/" target="_blank">
-                    <img class="icon" src="assets/icons/Kontakt-Instagram.svg" alt="Instagram Logo">
+                <a href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank" aria-label="LinkedIn Profil">
+                    <img class="icon" src="assets/icons/Kontakt-LinkedIn3.svg" alt="LinkedIn Logo">
                 </a>
+                <a href="https://github.com/lars-leuenberger" target="_blank" aria-label="GitHub Profil">
+                    <img class="icon" src="assets/icons/Kontakt-GitHub3.svg" alt="GitHub Logo">
+                </a>
+            </section>
+        </section>
 
-                <a href="https://github.com/lars-leuenberger" target="_blank">
-                    <img class="icon" src="assets/icons/Kontakt-GitHub.svg" alt="GitHub Logo">
-                </a>
-            </div>
-        </div>
-
-        <div class="input-container">
+        <section class="input-container">
             <form action="">
-                <input type="text" name="E-Mail" value="E-Mail">
-                <input type="text" name="Nachricht" value="Nachricht">
+                <input type="text" name="E-Mail" placeholder="E-Mail" required>
+                <input type="text" name="Nachricht" placeholder="Nachricht" rows required>
                 <input type="button" name="Button" value="Senden" id="button">
             </form>
-        </div>
+        </section>
 
     </main>
 
     <footer>
-        <!-- Links und Copyright -->
         <p>
-            <a href="https://github.com/lars-leuenberger" target="_blank">GitHub</a> | <a
-                href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">Linkedin</a> | <a
-                href="https://www.instagram.com/leuenla/" target="_blank">Instagram</a>
+            <a href="https://github.com/lars-leuenberger" target="_blank">GitHub</a> • 
+            <a href="https://www.linkedin.com/in/lars-leuenberger-9b148a35a" target="_blank">Linkedin</a> • 
+            <a href="https://www.instagram.com/leuenla/" target="_blank">Instagram</a>
         </p>
         <p>© Lars Leuenberger 2025</p>
     </footer>
 
 </body>
+<script src="js/script.js"></script>
 
 </html>

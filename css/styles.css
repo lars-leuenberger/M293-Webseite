@@ -44,6 +44,14 @@ h2 {
     text-decoration: none;
 }
 
+h3 {
+    color: unset;
+    font-family: var(--font);
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+    font-weight: var(--fontWeight-bold);
+    text-decoration: none;
+}
+
 p {
     color: unset;
     font-family: var(--font);
@@ -156,7 +164,7 @@ header {
 .logo {
     height: 10vh;
     width: auto;
-        transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
     will-change: transform;
 }
 
